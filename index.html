@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minjoni - Iepazīsti viņus!</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Personalizēts CSS -->
+    <style>
+        body {
+            background-color: #f1c40f;
+            color: #2c3e50;
+            font-family: 'Comic Sans MS', sans-serif;
+        }
+
+        .minion-header {
+            text-align: center;
+            margin-top: 30px;
+            color: #f39c12;
+        }
+
+        .minion-img {
+            width: 200px;
+            border-radius: 50%;
+        }
+
+        .minion-card {
+            margin: 20px;
+            background-color: #fff;
+            border: 2px solid #f39c12;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .minion-footer {
+            background-color: #f39c12;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .minion-button {
+            background-color: #f39c12;
+            border: none;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .minion-button:hover {
+            background-color: #e67e22;
+        }
+
+        .minion-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .minion-info {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .minion-card img {
+            margin-bottom: 15px;
+        }
+
+        /* Tabulas stils */
+        .minion-table {
+            margin-top: 40px;
+            border: 1px solid #f39c12;
+        }
+
+        .minion-table th, .minion-table td {
+            text-align: center;
+            padding: 15px;
+        }
+
+        .minion-table th {
+            background-color: #f39c12;
+            color: white;
+        }
+
+        .minion-table tr:nth-child(even) {
+            background-color: #f1f1f1;
+        }
+
+        .minion-table td {
+            background-color: #fff;
+        }
+
+        .minion-table a {
+            color: #f39c12;
+            text-decoration: none;
+        }
+
+        .minion-table a:hover {
+            text-decoration: underline;
+        }
+
+        /* Varoņu stils */
+        .minion-hero {
+            margin-top: 50px;
+        }
+
+        .minion-hero img {
+            width: 300px;
+            border-radius: 10px;
+            margin: 15px;
+        }
+
+        .minion-hero-description {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 class="minion-header">Minjoni - Tavi mīļākie dzeltenie draugi!</h1>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <div class="container minion-container">
+        <div class="card minion-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Minion_Movie_Character.jpg/800px-Minion_Movie_Character.jpg"
+                alt="Minions" class="minion-img">
+            <h3 class="text-center">Kas ir minjoni?</h3>
+            <p class="minion-info">Minjoni ir mazi, dzelteni, cilvēka līdzīgi radījumi no animācijas filmu sērijas "Despicable Me". Viņi ir ļoti smieklīgi un vienmēr meklē piedzīvojumus, bet viņiem ir ļoti neparasts valodas veids, kuru ir grūti saprast. Viņi ir uzticīgi un lojāli saviem vadītājiem, un viņu mērķis ir palīdzēt, kur vien iespējams.</p>
+            <button class="minion-button" onclick="alert('Minjonu spēks ir viņu draudzībā!')">Uzzini vairāk</button>
+        </div>
+
+        <div class="card minion-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Minions_Agents_Of_Chaos_Logo.jpg"
+                alt="Minions movie" class="minion-img">
+            <h3 class="text-center">Minjoni filmu pasaulē</h3>
+            <p class="minion-info">Minjoni ir galvenie varoņi vairākās populārās filmās, sākot ar "Despicable Me" un līdz pat "Minions" un "Minions: The Rise of Gru". Šie mazie dzeltenie radījumi piedzīvo daudz jautras un trakas piedzīvojumu, kas padara viņus par vieniem no mīlētākajiem animācijas varoņiem visā pasaulē.</p>
+            <button class="minion-button" onclick="alert('Minjoni ir iemācījušies būt gan jautriem, gan piedzīvojumu pilniem!')">Skatīt filmu</button>
+            <!-- Saites pievienošana -->
+            <p class="text-center mt-3">
+                <a href="https://hd-rezka.one/filmy/371-minony.html" target="_blank" class="btn btn-danger">Skatīties "Minions" filmā Netflix</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Minionu vārdnīca -->
+    <div class="container">
+        <h2 class="text-center">Minionu Vārdnīca</h2>
+        <table class="table minion-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Vārds</th>
+                    <th>Nozīme</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Banana</td>
+                    <td>Minjoni bieži saka "banana" kā viņu iecienīto vārdu, jo viņi mīl šo augli!</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Bello</td>
+                    <td>Minjonu sveiciens, kas nozīmē "Sveiks!"</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Tulaliloo ti amo</td>
+                    <td>Minjonu valodā tas nozīmē "Es tevi mīlu".</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Me want banana</td>
+                    <td>Frāze, kuru minjoni bieži saka, lai izteiktu savu vēlmi pēc banāniem!</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Poopaye</td>
+                    <td>Minjonu valodas frāze, kas tiek izmantota, lai pateiktos vai atvadītos.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Galvenie varoņi -->
+    <div class="container minion-hero">
+        <h2 class="text-center">Galvenie Minjonu Varoņi</h2>
+
+        <div class="card minion-card">
+            <img src="https://i.pinimg.com/originals/d0/c6/f3/d0c6f308079e0dd36127b76b80964eab.jpg" alt="Gru" class="minion-img">
+            <h3 class="text-center">Gru</h3>
+            <p class="minion-hero-description">Gru ir galvenais varonis filmā "Despicable Me", kur viņš sāk kā ļaundaris, taču pakāpeniski kļūst par ģimenes cilvēku. Viņš adoptē trīs meitenes un kļūst par Minjonu vadītāju, kas ir viņu galvenais līderis. Gru ir pārāk gudrs, lai viņam būtu kādi lieli trūkumi, un viņš ir Minjonu uzticamais draugs un vadītājs.</p>
+        </div>
+
+        <div class="card minion-card">
+            <img src="https://th.bing.com/th/id/R.55fa697c41722d0b96346dff0026ddf0?rik=GoOub66FZcM91A&riu=http%3a%2f%2fwww.pngplay.com%2fwp-content%2fuploads%2f2%2fKevin-Minion-Transparent-File.png&ehk=PXylFmC3eoO49D89CM5zkRk8MgBI8qBIlj18VeLcSBA%3d&risl=&pid=ImgRaw&r=0" alt="Kevin" class="minion-img">
+            <h3 class="text-center">Kevin</h3>
+            <p class="minion-hero-description">Kevin ir viens no galvenajiem minjoniem, kas bieži ir redzams filmās. Viņš ir izcils līderis un piedzīvojumu meklētājs, kurš vienmēr ir gatavs risināt problēmas un veikt lielus izaicinājumus. Kevin bieži uzņemas vadību, kad ir nepieciešams, un viņa uzticība Minjoniem ir nenovērtējama.</p>
+        </div>
+
+        <div class="card minion-card">
+            <img src="https://vignette.wikia.nocookie.net/universalstudios/images/2/28/Stuart_minions.png/revision/latest?cb=20171012180021" alt="Stuart" class="minion-img">
+            <h3 class="text-center">Stuart</h3>
+            <p class="minion-hero-description">Stuart ir viens no mīļākajiem minjoniem, pazīstams ar savu vieglprātīgo raksturu un mīlestību pret mūziku. Viņš ir bieži sastopams minjonu piedzīvojumos, kur viņš parāda savu jautro un atjautīgo personību. Stuart mīl spēlēt ģitāru un ir vienmēr gatavs piedzīvojumiem!</p>
+        </div>
+        <div class="card minion-card">
+            <img src="https://th.bing.com/th/id/OIP.wm6OseqCn1wGx9JhHYL6ggHaHY?rs=1&pid=ImgDetMain" alt="Stuart" class="minion-img">
+            <h3 class="text-center">Bob</h3>
+            <p class="minion-hero-description">
+            <P class="minion-hero-description"></P> ir ļoti jautrs un mīlīgs minjons, kuram patīk piedzīvojumi un kura īpašības ir nevainojams labsirdīgums un uzticība. Bobam ir neparasts raksturs – viņam ir divas dažādas acis, kas piešķir viņam vēl lielāku unikālumu.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="minion-footer">
+        <p>&copy; 2024 Minjoni - Visi tiesības aizsargātas!</p>
+    </footer>
+
+    <!-- Bootstrap 5 JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
